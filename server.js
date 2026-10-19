@@ -27,11 +27,7 @@ http.createServer((request, response) => {
     return;
   }
 
-  const relativePath = pathname === '/'
-    ? 'index.html'
-    : pathname.startsWith('/projects/')
-      ? path.join('public', pathname.replace(/^\/+/, ''))
-      : pathname.replace(/^\/+/, '');
+  const relativePath = pathname === '/' ? 'index.html' : pathname.replace(/^\/+/, '');
   const filePath = path.resolve(root, relativePath);
   const relativeToRoot = path.relative(root, filePath);
   if (relativeToRoot.startsWith('..') || path.isAbsolute(relativeToRoot)) {
