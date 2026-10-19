@@ -95,7 +95,7 @@ document.querySelector('#root').innerHTML = `
     </section>
 
     <section class="about-section" id="about">
-      <div class="about-marker"><span>ABOUT<br>ELIZAVETA</span><span class="marker-cross">✳</span></div>
+      <div class="about-marker"><span>ABOUT<br>ELIZAVETA</span></div>
       <div class="about-main"><p class="eyebrow">A FEW WORDS ABOUT ME</p><h2>From first idea<br />to <em>finished website.</em></h2><p class="about-text">I'm Elizaveta Remizova, a digital designer and frontend developer. I shape ideas into clear, distinctive web experiences—from the first structure and visual direction to a responsive build.</p><a class="text-link" href="#process">How I work ${arrow()}</a></div>
       <div class="about-side"><span>DESIGN / FIGMA</span><span>VISUAL / AFFINITY</span><span>BUILD / WEB</span><p>I bring design and development together, so the finished site feels as considered as the original idea.</p></div>
     </section>
@@ -124,7 +124,7 @@ document.querySelector('#root').innerHTML = `
       </div>
     </section>
 
-    <section class="contact-section" id="contact"><p class="eyebrow">HAVE A PROJECT IN MIND?</p><h2>Let’s make<br /><em>it happen.</em></h2><p>Available for thoughtful design and web projects.</p><div class="contact-links"><a href="mailto:lizaremizovads@gmail.com">lizaremizovads@gmail.com ${arrow(true)}</a><a href="tel:+37120099655">+371 20099655 ${arrow(true)}</a></div><span class="contact-orbit" aria-hidden="true">✳</span></section>
+    <section class="contact-section" id="contact"><p class="eyebrow">HAVE A PROJECT IN MIND?</p><h2>Let’s make<br /><em>it happen.</em></h2><p>Available for thoughtful design and web projects.</p><div class="contact-links"><a href="mailto:lizaremizovads@gmail.com">lizaremizovads@gmail.com ${arrow(true)}</a><a href="tel:+37120099655">+371 20099655 ${arrow(true)}</a></div></section>
   </main>
 
   <footer class="site-footer"><a class="wordmark" href="#top">ER<span>.</span></a><span>ELIZAVETA REMIZOVA / DIGITAL DESIGN & FRONTEND</span><a href="#top">BACK TO TOP ↑</a></footer>
