@@ -35,7 +35,6 @@ const projects = [
   },
 ];
 
-const arrow = (diagonal = false) => `<span aria-hidden="true" class="arrow">${diagonal ? '↗' : '↘'}</span>`;
 
 function projectCard(project) {
   return `
@@ -44,7 +43,7 @@ function projectCard(project) {
       <span class="project-image-wrap"><img src="${project.cover}" alt="${project.coverAlt}" loading="lazy"></span>
       <span class="project-caption">
         <span><strong>${project.name}</strong><small>${project.descriptor}</small></span>
-        <span class="round-arrow">${arrow(true)}</span>
+        
       </span>
     </button>`;
 }
@@ -91,12 +90,12 @@ document.querySelector('#root').innerHTML = `
         <h1 id="hero-title">ELIZAVETA<br /><em>REMIZOVA</em><span class="hero-index">(01)</span></h1>
         <div class="hero-copy"><p>Digital designer<br />&amp; frontend developer</p><a class="scroll-orb" href="#about" aria-label="Scroll to about"><span>↓</span><small>SCROLL<br />TO EXPLORE</small></a></div>
       </div>
-      <div class="hero-bottom"><p>I turn early ideas into distinctive, responsive websites—from the first sketch to the final detail.</p><a class="text-link" href="#work">Explore selected work ${arrow()}</a></div>
+      <div class="hero-bottom"><p>I turn early ideas into distinctive, responsive websites—from the first sketch to the final detail.</p><a class="text-link" href="#work">Explore selected work</a></div>
     </section>
 
     <section class="about-section" id="about">
       <div class="about-marker"><span>ABOUT<br>ELIZAVETA</span></div>
-      <div class="about-main"><p class="eyebrow">A FEW WORDS ABOUT ME</p><h2>From first idea<br />to <em>finished website.</em></h2><p class="about-text">I'm Elizaveta Remizova, a digital designer and frontend developer. I shape ideas into clear, distinctive web experiences—from the first structure and visual direction to a responsive build.</p><a class="text-link" href="#process">How I work ${arrow()}</a></div>
+      <div class="about-main"><p class="eyebrow">A FEW WORDS ABOUT ME</p><h2>From first idea<br />to <em>finished website.</em></h2><p class="about-text">I'm Elizaveta Remizova, a digital designer and frontend developer. I shape ideas into clear, distinctive web experiences—from the first structure and visual direction to a responsive build.</p><a class="text-link" href="#process">How I work</a></div>
       <div class="about-side"><span>DESIGN / FIGMA</span><span>VISUAL / AFFINITY</span><span>BUILD / WEB</span><p>I bring design and development together, so the finished site feels as considered as the original idea.</p></div>
     </section>
 
@@ -124,7 +123,7 @@ document.querySelector('#root').innerHTML = `
       </div>
     </section>
 
-    <section class="contact-section" id="contact"><p class="eyebrow">HAVE A PROJECT IN MIND?</p><h2>Let’s make<br /><em>it happen.</em></h2><p>Available for thoughtful design and web projects.</p><div class="contact-links"><a href="mailto:lizaremizovads@gmail.com">lizaremizovads@gmail.com ${arrow(true)}</a><a href="tel:+37120099655">+371 20099655 ${arrow(true)}</a></div></section>
+    <section class="contact-section" id="contact"><p class="eyebrow">HAVE A PROJECT IN MIND?</p><h2>Let’s make<br /><em>it happen.</em></h2><p>Available for thoughtful design and web projects.</p><div class="contact-links"><a href="mailto:lizaremizovads@gmail.com">lizaremizovads@gmail.com</a><a href="tel:+37120099655">+371 20099655</a></div></section>
   </main>
 
   <footer class="site-footer"><a class="wordmark" href="#top">ER<span>.</span></a><span>ELIZAVETA REMIZOVA / DIGITAL DESIGN & FRONTEND</span><a href="#top">BACK TO TOP ↑</a></footer>
